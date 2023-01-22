@@ -84,8 +84,8 @@ class tool():
                 print(bcolor.RED,banner())
                 bar()
                 print()
-                os.system('git clone https://github.com/aircrack-ng/aircrack-ng')
-                os.system('cd aircrack-ng/')
+                os.system('git clone https://github.com/aircrack-ng/aircrack-ng && cd aircrack-ng')
+#                 os.system('cd aircrack-ng/')
                 os.system('autoreconf -i')
                 os.system('./configure --with-experimental')
                 os.system('make')
@@ -95,9 +95,9 @@ class tool():
             elif self.set_tool==int(2):
                 print(bcolor.RED,banner())
                 bar()
-                os.system('git clone https://www.github.com/FluxionNetwork/fluxion.git')
-                os.system('apt install dhcpd lighttpd php-cgi && isc-dhcp-server')
-                os.system('cd fluxion/ && sudo ./fluxion.sh')
+                os.system('git clone https://www.github.com/FluxionNetwork/fluxion.git && cd fluxion/ && sudo ./fluxion.sh')
+#                 os.system('apt install dhcpd lighttpd php-cgi && isc-dhcp-server')
+#                 os.system('cd fluxion/ && sudo ./fluxion.sh')
                 
                 
             elif self.set_tool==int(3):
